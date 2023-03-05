@@ -1,0 +1,20 @@
+
+inputs = {"n": "Noun",
+"p": "Plural Noun",
+"v": "Verb",
+"g": "Verb (ing)",
+"t": "Verb (past tense)",
+"d": "Adverb", 
+"a": "Adjective", 
+"1": "Number", 
+"l": "Type of Liquid", 
+"f": "Type of Food", 
+"m": "Place",
+"c": "Celebrity", 
+"s": "Silly Word", 
+"e": "Exclamation",
+"r": "Name of Person in Room",
+"b": "Part of the Body",
+"k": "Part of the Body Plural",
+"u": "Custom"
+}
