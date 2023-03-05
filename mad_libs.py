@@ -13,7 +13,7 @@ class CustomWindow(QMainWindow):
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Ameer & Lindsey's Mad Libs")
+        self.setWindowTitle("Mad Libs")
         self.input_text = ""
         self.custom_text_input = QLineEdit()
         self.custom_label = QLabel("Enter your custom prompt: ")
@@ -60,7 +60,7 @@ class MainWindow(QMainWindow):
 
         self.prompt_counter = 0
         self.added_fill_ins = [] # holds list of prompts for cycling later
-        self.setWindowTitle("Ameer & Lindsey's Mad Libs")
+        self.setWindowTitle("Mad Libs")
         self.buttons = []
 
         # file menu options. Currently just save but want to include open
@@ -89,60 +89,6 @@ class MainWindow(QMainWindow):
             prompt_group.addButton(self.buttons[i])
             i = i + 1
         num_buttons_layout = int(len(prompt_group.buttons())/2)
-       
-
-        # self.button_noun = QPushButton(self.button_list[0])
-        # self.button_noun.clicked.connect(lambda:self.add_a_prompt(self.button_list[0]))
-        # self.button_plural_noun = QPushButton(self.button_list[1])
-        # self.button_plural_noun.clicked.connect(lambda:self.add_a_prompt(self.button_list[1]))
-        # self.button_verb = QPushButton(self.button_list[2])
-        # self.button_verb.clicked.connect(lambda:self.add_a_prompt(self.button_list[2]))
-        # self.button_verbing = QPushButton(self.button_list[3])
-        # self.button_verbing.clicked.connect(lambda:self.add_a_prompt(self.button_list[3]))
-        # self.button_verbpast = QPushButton(self.button_list[4])
-        # self.button_verbpast.clicked.connect(lambda:self.add_a_prompt(self.button_list[4]))
-        # self.button_adverb = QPushButton(self.button_list[5])
-        # self.button_adverb.clicked.connect(lambda:self.add_a_prompt(self.button_list[5]))
-        # self.button_adjective = QPushButton(self.button_list[6])
-        # self.button_adjective.clicked.connect(lambda:self.add_a_prompt(self.button_list[6]))
-        # self.button_number = QPushButton(self.button_list[7])
-        # self.button_number.clicked.connect(lambda:self.add_a_prompt(self.button_list[7]))
-        # self.button_liquid = QPushButton(self.button_list[8])
-        # self.button_liquid.clicked.connect(lambda:self.add_a_prompt(self.button_list[8]))
-        # self.button_food = QPushButton(self.button_list[9])
-        # self.button_food.clicked.connect(lambda:self.add_a_prompt(self.button_list[9]))
-        # self.button_place = QPushButton(self.button_list[10])
-        # self.button_place.clicked.connect(lambda:self.add_a_prompt(self.button_list[10]))
-        # self.button_celeb = QPushButton(self.button_list[11])
-        # self.button_celeb.clicked.connect(lambda:self.add_a_prompt(self.button_list[11]))
-        # self.button_silly = QPushButton(self.button_list[12])
-        # self.button_silly.clicked.connect(lambda:self.add_a_prompt(self.button_list[12]))
-        # self.button_exclamation = QPushButton(self.button_list[13])
-        # self.button_exclamation.clicked.connect(lambda:self.add_a_prompt(self.button_list[13]))
-        # self.button_name = QPushButton(self.button_list[14])
-        # self.button_name.clicked.connect(lambda:self.add_a_prompt(self.button_list[14]))
-        # self.button_custom = QPushButton(self.button_list[15])
-        # self.button_custom.clicked.connect(self.custom_prompt_window)
-
-        # # group buttons together
-        # prompt_group = QButtonGroup()
-        # prompt_group.addButton(self.button_noun)
-        # prompt_group.addButton(self.button_plural_noun)
-        # prompt_group.addButton(self.button_verb)
-        # prompt_group.addButton(self.button_verbing)
-        # prompt_group.addButton(self.button_verbpast)
-        # prompt_group.addButton(self.button_adverb)
-        # prompt_group.addButton(self.button_adjective)
-        # prompt_group.addButton(self.button_number)
-        # prompt_group.addButton(self.button_liquid)
-        # prompt_group.addButton(self.button_food)
-        # prompt_group.addButton(self.button_place)
-        # prompt_group.addButton(self.button_celeb)
-        # prompt_group.addButton(self.button_silly)
-        # prompt_group.addButton(self.button_exclamation)
-        # prompt_group.addButton(self.button_name)
-        # prompt_group.addButton(self.button_custom)
-
 
         # Theme text and labels
         self.theme_text = QLineEdit()
