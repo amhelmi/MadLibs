@@ -32,7 +32,9 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 ```
 1. Enter a theme of your choice in the theme text box.
 2. Begin typing your own mad lib in the main text window.
-3. Add any of the fill-in-the-blank types at any point in the text by clicking the button. When a type is selected, it will be added to where the cursor is in the text. A fill-in-the-blank may be deleted manually or by clicking undo to remove the most recent type from the text.
+3. Add any of the fill-in-the-blank types at any point in the text by clicking the button.
+  - When a type is selected, it will be added to where the cursor is in the text.
+  - A fill-in-the-blank may be deleted manually or by clicking undo to remove the most recent type from the text.
 4. Custom fill-in-the-blank types can be created on the fly as needed. 
 5. Once the text is written and the fill-in-the-blanks have been generated, click Done. 
 6. A new window will open to allow for responses to be added. The text will fully update after all the responses have been added.
