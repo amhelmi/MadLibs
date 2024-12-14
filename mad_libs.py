@@ -110,7 +110,7 @@ class MainWindow(QMainWindow):
         change_image_action.setStatusTip('Change Background')
         change_image_action.triggered.connect(self.change_image)
         # Use ChatGPT
-        chatgpt_action = QAction("Generate a Mad Lib", self)
+        chatgpt_action = QAction("Generate a mad lib", self)
         chatgpt_action.setStatusTip("Use ChatGPT")
         chatgpt_action.triggered.connect(self.ai_generate)
         # add menu options
@@ -262,6 +262,13 @@ class MainWindow(QMainWindow):
             for i, prompt in enumerate(self.added_prompts):
                 self.added_prompts_dict[i] = prompt
             self.full_text.setText(self.current_text)
+            self.theme_text.setReadOnly(False)
+            self.full_text.setReadOnly(False)
+            self.done_button.setEnabled(True)
+            self.undo_button.setEnabled(True)
+
+            for button in self.prompt_group.buttons():
+                button.setEnabled(True)
         # error if application is already open
         except:
             self.full_text.setText("INVALID CONFIG. MAKE A NEW MAD LIB YA GOOF")
@@ -339,7 +346,7 @@ class MainWindow(QMainWindow):
 
                 if retries > max_retries:
                     self.full_text.setReadOnly(False)
-                    self.full_text.setText("Failed to generate a Mad Lib correctly. Try again.")
+                    self.full_text.setText("Failed to generate a mad lib correctly. Try again.")
                     self.close()
             else:
                 # clicked cancel on the second prompt.
@@ -539,8 +546,7 @@ class MainWindow(QMainWindow):
 
 stylesheet_main = """
         MainWindow {
-        background-image: url("Backgrounds/silly.png") repeat;
-
+        background-image: url("backgrounds/silly.png") repeat;
     }
 """
 
