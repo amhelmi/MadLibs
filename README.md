@@ -37,16 +37,20 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
   - A fill-in-the-blank may be deleted manually or by clicking undo to remove the most recent type from the text.
 4. Custom fill-in-the-blank types can be created on the fly as needed. 
 5. Once the text is written and the fill-in-the-blanks have been generated, click Done. 
-6. A new window will open to allow for responses to be added. The text will fully update after all the responses have been added.
-7. After the mad lib is completed, it can be saved for future use. The next version will add a clear button to start over with a new mad lib.
+6. A new window will open to allow for responses to be added.
+7. The text will fully update after all the responses have been added.
+8. After the mad lib is completed, it can be saved for future use.
 ```
 2. Using ChatGPT to make a mad lib
 ```
 1. Select *File* in the top left of the window.
 2. Select *Generate a mad lib*.
-3. A prompt will appear asking for a theme. Enter a theme of your choice and select ok. The current default theme is Winter.
-4. A new prompt will appear asking for how many fill-in-the-blanks ChatGPT should create within the text. If no number is entered, it will choose a random number between 1 and 10.
-5. Wait for ChatGPT to create the content. It currently checks if it has generated the correct number of desired prompts and tries to re-write the paragraph if it fails (i.e., had too many or too few fill-in-the-blanks). ChatGPT will try a maximum of 3 times before waiting for a new theme.
+3. A prompt will appear asking for a theme. Enter a theme of your choice and select ok.
+  - The current default theme is Winter.
+4. A new prompt will appear asking for how many fill-in-the-blanks ChatGPT should create within the text.
+  - If no number is entered, it will choose a random number between 1 and 10.
+5. Wait for ChatGPT to create the content.
+ - ChatGPT will try a maximum of 3 times to generate the text with the correct number of responses before failing. 
 6. Once the content has been created, responses can be put in and the mad lib filled out.
 7. ChatGPT does not check if the theme makes any sense for now and may make grammar errors in the text.
 ```
@@ -69,7 +73,6 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 1. Select *File* in the top left of the window.
 2. Select *Change Background*.
 3. Select the image of your choice from your computer and it will be added as the background.
-4. The default image is the silly face and can only be changed within the code. This will be updated in the future.
 ```
 # Limitations
 The application does not currently check if the fill-in-the-blank responses are expected input types (e.g., checking if a number is entered for a Number prompt). 
