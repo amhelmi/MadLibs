@@ -31,47 +31,69 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 1. Creating your own mad lib
 ```
 1. Enter a theme of your choice in the theme text box.
+
 2. Begin typing your own mad lib in the main text window.
+
 3. Add any of the fill-in-the-blank types at any point in the text by clicking the button.
   - When a type is selected, it will be added to where the cursor is in the text.
   - A fill-in-the-blank may be deleted manually or by clicking undo to remove the most recent type from the text.
-4. Custom fill-in-the-blank types can be created on the fly as needed. 
-5. Once the text is written and the fill-in-the-blanks have been generated, click Done. 
+
+4. Custom fill-in-the-blank types can be created on the fly as needed.
+
+5. Once the text is written and the fill-in-the-blanks have been generated, click Done.
+
 6. A new window will open to allow for responses to be added.
+
 7. The text will fully update after all the responses have been added.
+
 8. After the mad lib is completed, it can be saved for future use.
 ```
 2. Using ChatGPT to make a mad lib
 ```
 1. Select *File* in the top left of the window.
+
 2. Select *Generate a mad lib*.
+
 3. A prompt will appear asking for a theme. Enter a theme of your choice and select ok.
+
   - The current default theme is Winter.
+
 4. A new prompt will appear asking for how many fill-in-the-blanks ChatGPT should create within the text.
   - If no number is entered, it will choose a random number between 1 and 10.
+
 5. Wait for ChatGPT to create the content.
- - ChatGPT will try a maximum of 3 times to generate the text with the correct number of responses before failing. 
+ - ChatGPT will try a maximum of 3 times to generate the text with the correct number of responses before failing.
+
 6. Once the content has been created, responses can be put in and the mad lib filled out.
+
 7. ChatGPT does not check if the theme makes any sense for now and may make grammar errors in the text.
 ```
 3. Saving a mad lib
 ```
 1. Select *File* in the top left of the window.
+
 2. Select *Save File*.
+
 3. Select a name for your document and click save.
 ```
 4. Opening a mad lib
 ```
 1. Select *File* in the top left of the window.
+
 2. Select *Open File*.
+
 3. Choose the mad lib you wish to do again.
+
 4. The mad lib text with the original fill-in-the-blanks will be loaded into the main text window.
+
 5. All buttons are enabled to allow for adding of new fill-in-the-blanks or re-writing some of the text.
 ```
 5. Changing the background image
 ```
 1. Select *File* in the top left of the window.
+
 2. Select *Change Background*.
+
 3. Select the image of your choice from your computer and it will be added as the background.
 ```
 # Limitations
