@@ -22,7 +22,7 @@ class CustomWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Make your own mad libs")
-        self.input_text = ""
+        self.error_text = ""
         self.custom_text_input = QLineEdit()
         self.custom_label = QLabel("Enter your custom prompt: ")
         self.custom_button = QPushButton("Done")
@@ -153,9 +153,6 @@ class MainWindow(QMainWindow):
         self.bold_fmt.setFontWeight(700)
 
         # labels for showing prompt count and prompt to fill in
-        self.fill_in_label = QLabel()
-        self.fill_in_label.setStyleSheet("color:white;background-color:black")
-        self.fill_in_label.hide()
         self.prompt_counter_label = QLabel("Number of Prompts: ")
         self.prompt_counter_label.setStyleSheet("color:white;"
                                                 "background-color:black")
@@ -164,7 +161,10 @@ class MainWindow(QMainWindow):
         self.done_button = QPushButton("Done")
         self.done_button.setEnabled(False)
         self.done_button.clicked.connect(self.start_fill_in_the_blank)
-
+        # clear button to start over with blank text
+        self.clear_button = QPushButton("Clear")
+        self.clear_button.setEnabled(True)
+        self.clear_button.clicked.connect(self.clear_all)
         # undo button for undoing prompts
         self.undo_button = QPushButton("Undo")
         self.undo_button.setEnabled(False)
@@ -172,9 +172,9 @@ class MainWindow(QMainWindow):
         self.undo_button.clicked.connect(self.undo_prompt)
 
         # prompt editor buttons
-        self.input_text = QLineEdit()
-        self.input_text.setReadOnly(True)
-        self.input_text.hide()
+        self.error_text = QLineEdit()
+        self.error_text.setReadOnly(True)
+        self.error_text.hide()
 
         # layout adds all items
         layout = QGridLayout()
@@ -196,10 +196,9 @@ class MainWindow(QMainWindow):
                 layout.addWidget(self.buttons_shortcut_label[i], i - 9,
                                  28, alignment=Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.undo_button, 11, 23, 1, 1)
+        layout.addWidget(self.clear_button,12 ,23, 1, 1)
         layout.addWidget(self.done_button, 12, 0, 1, 1)
-        layout.addWidget(self.fill_in_label, 14, 0,
-                         alignment=Qt.AlignmentFlag.AlignLeft)
-        layout.addWidget(self.input_text, 14, 1, 1, 15)
+        layout.addWidget(self.error_text, 14, 0, 1, 5)
         #layout.addWidget(self.undo_button, 12, 16, 1, 1)
 
         # Set the central widget of the Window.
@@ -266,6 +265,7 @@ class MainWindow(QMainWindow):
             self.full_text.setReadOnly(False)
             self.done_button.setEnabled(True)
             self.undo_button.setEnabled(True)
+            self.prompt_counter_label_update()
 
             for button in self.prompt_group.buttons():
                 button.setEnabled(True)
@@ -341,7 +341,8 @@ class MainWindow(QMainWindow):
                         else:
                             retries += 1
                     except Exception as e:
-                        print(f"An error occurred: {e}")
+                        self.error_text.setText(f"An error occurred: {e}")
+                        self.error_text.show()
                         break
 
                 if retries > max_retries:
@@ -377,7 +378,7 @@ class MainWindow(QMainWindow):
                     if isCanceled:
                         self.close()
                     else:
-                        prompt_answer, done3 = QInputDialog.getText(self, 'Prompt Answers', 'Enter a(n) ' + str(value[:-1]) + ':')
+                        prompt_answer, done3 = QInputDialog.getText(self, 'Fill-in-the-blanks!', 'Enter a(n) ' + str(value[:-1]) + ':')
                         if done3:
                             prompt_responses[value] = prompt_answer
                             isCanceled = False
@@ -420,6 +421,22 @@ class MainWindow(QMainWindow):
         '''Update prompt label with new count'''
         self.prompt_counter_label.setText("Number of Prompts: "
                                           + str(len(self.added_prompts)))
+        
+    def clear_all(self):
+        self.full_text.setText("")
+        self.full_text.setReadOnly(False)
+        self.theme_text.setText("")
+        self.theme_text.setReadOnly(False)
+        self.done_button.setEnabled(True)
+        self.undo_button.setEnabled(True)
+
+        for button in self.prompt_group.buttons():
+            button.setEnabled(True)
+        
+        self.added_prompts = []
+        self.added_prompts_dict = {}
+        self.prompt_counter_label_update()
+
 
     ###################################################
     # Button Function definitions
@@ -506,10 +523,11 @@ class MainWindow(QMainWindow):
         isCanceled = False
         if len(self.added_prompts) == 0:
             # error label
-            self.input_text.show()
-            self.input_text.setText("Enter a Prompt first!")
+            self.error_text.show()
+            self.error_text.setText("You didn't write any fill-in-the-blanks!")
             pass
         else:
+            self.error_text.hide()
             self.final_pre_text = self.full_text.toPlainText()
             self.current_text = self.full_text.toPlainText()
             self.theme_text.setReadOnly(True)
@@ -529,7 +547,7 @@ class MainWindow(QMainWindow):
                 if isCanceled:
                     self.close()
                 else:
-                    prompt_answer, done3 = QInputDialog.getText(self, 'Prompt Answers', 'Enter a(n) ' + str(value[:-1]) + ':')
+                    prompt_answer, done3 = QInputDialog.getText(self, 'Fill-in-the-blanks!', 'Enter a(n) ' + str(value[:-1]) + ':')
                     if done3:
                         prompt_responses[value] = prompt_answer
                         isCanceled = False

@@ -47,6 +47,8 @@ Creating your own mad lib
 7. The text will fully update after all the responses have been added.
 
 8. After the mad lib is completed, it can be saved for future use.
+
+9. Select the *Clear* button to start a new mad lib.
 ```
 Using ChatGPT to make a mad lib
 ```
@@ -104,5 +106,3 @@ The application closes completely if a user clicks cancel in any window. This wi
 Adding a custom prompt type does not allow you to save it as a future available button. This will be updated to include a button to save a custom prompt type for future use. 
 
 The only way to change the default background image is within the python code. This will be updated to allow a user to use the most recent image as the default.
-
-No way to clear a mad lib and start over manually after finishing one. ChatGPT can be used iteratively to generate new mad libs each time. This will be updated to include a clear button.
