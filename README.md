@@ -27,7 +27,7 @@ pip install openai
 
 If the OpenAI key cannot be found automatically, enter the key manually into line 88 of the mad_libs.py file.
 
-<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
+<p align="right">(<a href="# Make your own mad libs ">back to top</a>)</p>
 
 # Controls 
 ### Creating your own mad lib
