@@ -110,3 +110,11 @@ The application closes completely if a user clicks cancel in any window. This wi
 Adding a custom prompt type does not allow you to save it as a future available button. This will be updated to include a button to save a custom prompt type for future use. 
 
 The only way to change the default background image is within the python code. This will be updated to allow a user to use the most recent image as the default.
+
+# Contact
+
+Ameer Helmi - ameer.helmi@gmail.com
+
+# License
+
+Distributed under the MIT License. See LICENSE.txt for more information.
