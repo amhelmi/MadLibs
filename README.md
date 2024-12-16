@@ -4,7 +4,9 @@ a mad lib based on your choice of a theme.
 
 Finished mad libs can be saved as a word document with the filled text as well as the original text with the fill-in-the-blanks. These documents can be opened to re-load a mad lib and fill it out again and again! Finally, a user can set the background image of their choice as opposed to the default silly face image I made in paint. 
 
-The inputs_file.py script contains the list of available fill-in-the-blank types and more can be added as desired. Add a new entry to the inputs dictionary where the key is the keyboard shortcut and the value is the fill-in-the-blank type (e.g., "i": "Instrument"). The custom fill-in-the-blank type allows you to enter any type you would like. ChatGPT uses only the original list of types to generate a mad lib. More types can be added within the ChatGPT prompt starting at line 310.
+The inputs_file.py script contains the list of available fill-in-the-blank types and more can be added as desired. Add a new entry to the inputs dictionary where the key is the keyboard shortcut and the value is the fill-in-the-blank type (e.g., "i": "Instrument"). The custom fill-in-the-blank type allows you to enter any type you would like. 
+
+ChatGPT uses only the original list of types to generate a mad lib. More types can be added within the ChatGPT function starting at line 310.
 
 # Example
 
@@ -52,7 +54,7 @@ Creating your own mad lib
 ```
 Using ChatGPT to make a mad lib
 ```
-1. Select *File* in the top left of the window.
+1. Select **File** in the top left of the window.
 
 2. Select *Generate a mad lib*.
 
