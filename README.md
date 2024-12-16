@@ -37,8 +37,8 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 2. Begin typing your own mad lib in the main text window.
 
 3. Add any of the fill-in-the-blank types at any point in the text by clicking the button.
-  * When a type is selected, it will be added to where the cursor is in the text.
-  * A fill-in-the-blank may be deleted manually or by clicking undo to remove the most recent type from the text.
+    * When a type is selected, it will be added to where the cursor is in the text.
+    * A fill-in-the-blank may be deleted manually or by clicking undo to remove the most recent type from the text.
 
 4. Custom fill-in-the-blank types can be created on the fly as needed.
 
