@@ -61,13 +61,13 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 
 3. A prompt will appear asking for a theme. Enter a theme of your choice and select ok.
 
-  - The current default theme is Winter.
+    * The current default theme is Winter.
 
 4. A new prompt will appear asking for how many fill-in-the-blanks ChatGPT should create within the text.
-  - If no number is entered, it will choose a random number between 1 and 10.
+    * If no number is entered, it will choose a random number between 1 and 10.
 
 5. Wait for ChatGPT to create the content.
- - ChatGPT will try a maximum of 3 times to generate the text with the correct number of responses before failing.
+    * ChatGPT will try a maximum of 3 times to generate the text with the correct number of responses before failing.
 
 6. Once the content has been created, responses can be put in and the mad lib filled out.
 
