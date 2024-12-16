@@ -1,4 +1,4 @@
-# mad libs app
+<!-- Make your own mad libs -->
 This application allows you to write their own mad lib and include the fill-in-the-blanks of their choice or use ChatGPT to generate
 a mad lib based on your choice of a theme.
 
@@ -8,10 +8,10 @@ The inputs_file.py script contains the list of available fill-in-the-blank types
 
 ChatGPT uses only the original list of types to generate a mad lib. More types can be added within the ChatGPT function starting at line 310.
 
-# Example
+<!-- Example -->
 
 
-# To Run:
+###Installation###
 
 1. Install Dependencies:
 ```
@@ -30,7 +30,7 @@ pip install openai
 If the OpenAI key cannot be found automatically, enter the key manually into line 88 of the mad_libs.py file.
 
 # Controls 
-Creating your own mad lib
+** Creating your own mad lib**
 
 1. Enter a theme of your choice in the theme text box.
 
