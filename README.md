@@ -31,7 +31,7 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 
 # Controls 
 Creating your own mad lib
-```
+
 1. Enter a theme of your choice in the theme text box.
 
 2. Begin typing your own mad lib in the main text window.
@@ -50,13 +50,14 @@ Creating your own mad lib
 
 8. After the mad lib is completed, it can be saved for future use.
 
-9. Select the *Clear* button to start a new mad lib.
-```
+9. Select the **Clear** button to start a new mad lib.
+
+
 Using ChatGPT to make a mad lib
-```
+
 1. Select **File** in the top left of the window.
 
-2. Select *Generate a mad lib*.
+2. Select **Generate a mad lib**.
 
 3. A prompt will appear asking for a theme. Enter a theme of your choice and select ok.
 
@@ -71,35 +72,39 @@ Using ChatGPT to make a mad lib
 6. Once the content has been created, responses can be put in and the mad lib filled out.
 
 7. ChatGPT does not check if the theme makes any sense for now and may make grammar errors in the text.
-```
-Saving a mad lib
-```
-1. Select *File* in the top left of the window.
 
-2. Select *Save File*.
+
+Saving a mad lib
+
+1. Select **File** in the top left of the window.
+
+2. Select **Save File**.
 
 3. Select a name for your document and click save.
-```
-Opening a mad lib
-```
-1. Select *File* in the top left of the window.
 
-2. Select *Open File*.
+
+Opening a mad lib
+
+1. Select **File** in the top left of the window.
+
+2. Select **Open File**.
 
 3. Choose the mad lib you wish to do again.
 
 4. The mad lib text with the original fill-in-the-blanks will be loaded into the main text window.
 
 5. All buttons are enabled to allow for adding of new fill-in-the-blanks or re-writing some of the text.
-```
-Changing the background image
-```
-1. Select *File* in the top left of the window.
 
-2. Select *Change Background*.
+
+Changing the background image
+
+1. Select **File** in the top left of the window.
+
+2. Select **Change Background**.
 
 3. Select the image of your choice from your computer and it will be added as the background.
-```
+
+
 # Limitations
 The application does not currently check if the fill-in-the-blank responses are expected input types (e.g., checking if a number is entered for a Number prompt). 
 
