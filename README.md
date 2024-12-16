@@ -9,7 +9,7 @@ The inputs_file.py script contains the list of available fill-in-the-blank types
 ChatGPT uses only the original list of types to generate a mad lib. More types can be added within the ChatGPT function starting at line 310.
 
 # Example
-
+![Screenshot 2024-12-15 212033](https://github.com/user-attachments/assets/b38cb245-3ac7-4134-8797-04e290b08941)
 
 # Installation
 
@@ -53,7 +53,7 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 9. Select the **Clear** button to start a new mad lib.
 
 
-## Using ChatGPT to make a mad lib
+### Using ChatGPT to make a mad lib
 
 1. Select **File** in the top left of the window.
 
@@ -73,7 +73,7 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 
 7. ChatGPT does not check if the theme makes any sense for now and may make grammar errors in the text.
 
-## Saving a mad lib
+### Saving a mad lib
 
 1. Select **File** in the top left of the window.
 
@@ -82,7 +82,7 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 3. Select a name for your document and click save.
 
 
-## Opening a mad lib
+### Opening a mad lib
 
 1. Select **File** in the top left of the window.
 
@@ -95,7 +95,7 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 5. All buttons are enabled to allow for adding of new fill-in-the-blanks or re-writing some of the text.
 
 
-## Changing the background image
+### Changing the background image
 
 1. Select **File** in the top left of the window.
 
