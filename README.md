@@ -27,6 +27,8 @@ pip install openai
 
 If the OpenAI key cannot be found automatically, enter the key manually into line 88 of the mad_libs.py file.
 
+<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
+
 # Controls 
 ### Creating your own mad lib
 
@@ -101,6 +103,8 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 
 3. Select the image of your choice from your computer and it will be added as the background.
 
+<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
+
 
 # Limitations
 The application does not currently check if the fill-in-the-blank responses are expected input types (e.g., checking if a number is entered for a Number prompt). 
@@ -111,12 +115,16 @@ Adding a custom prompt type does not allow you to save it as a future available 
 
 The only way to change the default background image is within the python code. This will be updated to allow a user to use the most recent image as the default.
 
+<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
+
 # Contact
 
 Ameer Helmi - ameer.helmi@gmail.com
+
+<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
 
 # License
 
 Distributed under the MIT License. See LICENSE.txt for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
