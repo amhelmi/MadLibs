@@ -30,7 +30,7 @@ pip install openai
 If the OpenAI key cannot be found automatically, enter the key manually into line 88 of the mad_libs.py file.
 
 # Controls 
-## Creating your own mad lib ##
+## Creating your own mad lib
 
 1. Enter a theme of your choice in the theme text box.
 
@@ -53,7 +53,7 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 9. Select the **Clear** button to start a new mad lib.
 
 
-Using ChatGPT to make a mad lib
+## Using ChatGPT to make a mad lib
 
 1. Select **File** in the top left of the window.
 
@@ -73,8 +73,7 @@ Using ChatGPT to make a mad lib
 
 7. ChatGPT does not check if the theme makes any sense for now and may make grammar errors in the text.
 
-
-Saving a mad lib
+## Saving a mad lib
 
 1. Select **File** in the top left of the window.
 
@@ -83,7 +82,7 @@ Saving a mad lib
 3. Select a name for your document and click save.
 
 
-Opening a mad lib
+## Opening a mad lib
 
 1. Select **File** in the top left of the window.
 
@@ -96,7 +95,7 @@ Opening a mad lib
 5. All buttons are enabled to allow for adding of new fill-in-the-blanks or re-writing some of the text.
 
 
-Changing the background image
+## Changing the background image
 
 1. Select **File** in the top left of the window.
 
