@@ -130,4 +130,4 @@ Ameer Helmi - ameer.helmi@gmail.com
 
 Distributed under the MIT License. See LICENSE.txt for more information.
 
-<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
