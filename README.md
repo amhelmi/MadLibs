@@ -18,7 +18,6 @@ ChatGPT uses only the original list of types to generate a mad lib. More types c
 ```
 pip install docx
 pip install pyqt6
-pip install functional
 pip install openai
 ```
 
