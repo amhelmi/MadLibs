@@ -1,3 +1,6 @@
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
+
 # Make your own mad libs 
 ![Screenshot 2024-12-15 212033](https://github.com/user-attachments/assets/b38cb245-3ac7-4134-8797-04e290b08941)
 This application allows you to write their own mad lib and include the fill-in-the-blanks of their choice or use ChatGPT to generate
@@ -27,7 +30,7 @@ pip install openai
 
 If the OpenAI key cannot be found automatically, enter the key manually into line 88 of the mad_libs.py file.
 
-<p align="right">(<a href="# Make your own mad libs ">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Controls 
 ### Creating your own mad lib
@@ -103,7 +106,7 @@ If the OpenAI key cannot be found automatically, enter the key manually into lin
 
 3. Select the image of your choice from your computer and it will be added as the background.
 
-<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 # Limitations
@@ -115,13 +118,13 @@ Adding a custom prompt type does not allow you to save it as a future available 
 
 The only way to change the default background image is within the python code. This will be updated to allow a user to use the most recent image as the default.
 
-<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Contact
 
 Ameer Helmi - ameer.helmi@gmail.com
 
-<p align="right">(<a href="#Make your own mad libs ">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # License
 
