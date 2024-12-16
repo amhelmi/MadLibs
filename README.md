@@ -1,4 +1,5 @@
 # Make your own mad libs 
+![Screenshot 2024-12-15 212033](https://github.com/user-attachments/assets/b38cb245-3ac7-4134-8797-04e290b08941)
 This application allows you to write their own mad lib and include the fill-in-the-blanks of their choice or use ChatGPT to generate
 a mad lib based on your choice of a theme.
 
@@ -7,9 +8,6 @@ Finished mad libs can be saved as a word document with the filled text as well a
 The inputs_file.py script contains the list of available fill-in-the-blank types and more can be added as desired. Add a new entry to the inputs dictionary where the key is the keyboard shortcut and the value is the fill-in-the-blank type (e.g., "i": "Instrument"). The custom fill-in-the-blank type allows you to enter any type you would like. 
 
 ChatGPT uses only the original list of types to generate a mad lib. More types can be added within the ChatGPT function starting at line 310.
-
-# Example
-![Screenshot 2024-12-15 212033](https://github.com/user-attachments/assets/b38cb245-3ac7-4134-8797-04e290b08941)
 
 # Installation
 
