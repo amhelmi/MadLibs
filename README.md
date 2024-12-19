@@ -3,7 +3,7 @@
 
 # Make your own mad libs 
 ![Screenshot 2024-12-15 212033](https://github.com/user-attachments/assets/b38cb245-3ac7-4134-8797-04e290b08941)
-This application allows you to write their own mad lib and include the fill-in-the-blanks of their choice or use ChatGPT to generate
+This application allows you to write your own mad lib and include the fill-in-the-blanks of your choice *or* use ChatGPT to generate
 a mad lib based on your choice of a theme.
 
 Finished mad libs can be saved as a word document with the filled text as well as the original text with the fill-in-the-blanks. These documents can be opened to re-load a mad lib and fill it out again and again! Finally, a user can set the background image of their choice as opposed to the default silly face image I made in paint. 
