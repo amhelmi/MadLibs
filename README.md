@@ -3,6 +3,7 @@
 
 # Make your own mad libs 
 ![Screenshot 2024-12-15 212033](https://github.com/user-attachments/assets/b38cb245-3ac7-4134-8797-04e290b08941)
+
 This application allows you to write your own mad lib and include the fill-in-the-blanks of your choice *or* use ChatGPT to generate
 a mad lib based on your choice of a theme.
 
