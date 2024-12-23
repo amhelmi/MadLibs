@@ -348,13 +348,12 @@ class MainWindow(QMainWindow):
                 if retries > max_retries:
                     self.full_text.setReadOnly(False)
                     self.full_text.setText("Failed to generate a mad lib correctly. Try again.")
-                    self.close()
             else:
                 # clicked cancel on the second prompt.
                 isCanceled = True
             
             if isCanceled:
-                self.close()    
+                self.close()
             # fill dictionary with prompts
             else:
                 prompt_dict = {}
@@ -376,7 +375,7 @@ class MainWindow(QMainWindow):
                 prompt_responses = {}
                 for key, value in prompt_dict.items():
                     if isCanceled:
-                        self.close()
+                        pass
                     else:
                         prompt_answer, done3 = QInputDialog.getText(self, 'Fill-in-the-blanks!', 'Enter a(n) ' + str(value[:-1]) + ':')
                         if done3:
@@ -393,7 +392,9 @@ class MainWindow(QMainWindow):
                 self.full_text.setText(mad_lib_paragraph)
         else:
             # clicked cancel on first dialog
-            self.close()
+            print("hi")
+            pass
+            #self.close()
 
     def custom_prompt_window(self):
         '''
@@ -545,6 +546,7 @@ class MainWindow(QMainWindow):
             prompt_responses = {}
             for key, value in self.added_prompts_dict.items():
                 if isCanceled:
+                    print("hi")
                     self.close()
                 else:
                     prompt_answer, done3 = QInputDialog.getText(self, 'Fill-in-the-blanks!', 'Enter a(n) ' + str(value[:-1]) + ':')
